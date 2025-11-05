@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>罗小黑战记</title>
+    <style>
+        .dahezi{
+            width: 200px;
+            height: 700px;
+            margin: auto 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        *{
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(19, 143, 102);
+        }
+        .yjlb>li{
+            float: left;
+            background: #dbe6f3;
+            height: 40px;
+            width: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3px 3px;
+            border-radius: 5px;                             
+        }
+        .hezi2{
+            position: absolute;
+            top: 280px;
+            left: 432px;
+            width: 90px;
+            height: 216px;
+            background: #dbe6f3;;
+            margin: 3px 3px;
+            border-radius: 5px;
+            display: none;
+        }
+        .hezi3{
+            position: absolute;
+            top: 326px;
+            left: 432px;
+            width: 90px;
+            height: 174px;
+            background: #dbe6f3;;
+            margin: 3px 3px;
+            border-radius: 5px;
+            display: none;
+        }
+        .hezi4{
+            position: absolute;
+            top: 370px;
+            left: 432px;
+            width: 90px;
+            height: 174px;
+            background: #dbe6f3;;
+            margin: 5px 3px;
+            border-radius: 5px;
+            display: none;
+        }
+        .ejlb{
+            padding: 0px;
+        }
+        .ejlb>li{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 12px;
+        }
+        .yjlb>li:hover>.hezi2{
+            display: block;
+        }
+        .yjlb>li:hover>.hezi3{
+            display: block;
+        }
+        .yjlb>li:hover>.hezi4{
+            display: block;
+        }
+        body{
+            margin: 0; 
+            background-image: url(image/无限空间.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+            animation: wenzi  5s infinite alternate;
+        }
+        @keyframes wenzi {
+           0%{
+            color: rgb(98, 188, 86);
+           } 
+           25%{
+            color: rgb(19, 135, 19);
+           }
+           50%{
+            color: rgb(117, 198, 252);
+           }
+           75%{
+            color: #4466cc;
+           }
+           100%{
+            color: rgb(119, 173, 255);
+           }
+        }
+        p:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="dahezi">
+            <ul class="yjlb">
+                <li><a href="#"><p>土门</p></a>
+                    <div class="hezi2">
+                        <ul class="ejlb">
+                            <li><a href="#"><p>池年</p></a></li>
+                            <li><a href="#"><p>甲</p></a></li>
+                            <li><a href="#"><p>乙</p></a></li>
+                            <li><a href="#"><p>芷清</p></a></li>
+                            <li><a href="#"><p>丙</p></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><p>金门</p></a>
+                    <div class="hezi3">
+                        <ul class="ejlb">
+                            <li><a href="#"><p>无限</p></a></li>
+                            <li><a href="#"><p>鹿野</p></a></li>
+                            <li><a href="#"><p>泽宇</p></a></li>
+                            <li><a href="#"><p>小黑</p></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><p>蓝溪</p></a>
+                    <div class="hezi4">
+                        <ul class="ejlb">
+                            <li><a href="#"><p>老君</p></a></li>
+                            <li><a href="#"><p>明王</p></a></li>
+                            <li><a href="#"><p>玄离</p></a></li>
+                            <li><a href="#"><p>清凝</p></a></li>
+
+                        </ul>
+                    </div> 
+                </li>
+            </ul>
+    </div>
+</body>
+</html>
